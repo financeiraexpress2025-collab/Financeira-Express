@@ -1,109 +1,60 @@
 /* ==========================================================
    FINANCEIRA EXPRESS
-   STYLE GLOBAL
-   Desenvolvido por: Financeira Express
-   Versão: 1.0
+   ARQUIVO GLOBAL
+   Versão: 2.0
 ==========================================================*/
 
-/* ==========================================================
-   IMPORTAÇÃO DA FONTE
-==========================================================*/
+/* =========================
+   RESET
+========================= */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-/* ==========================================================
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#ffffff;
+    color:#111111;
+    overflow-x:hidden;
+    line-height:1.6;
+}
+
+/* =========================
    VARIÁVEIS
-==========================================================*/
+========================= */
 
 :root{
 
-    --color-primary:#D4AF37;
+    --primary:#D4AF37;
 
-    --color-primary-dark:#B89223;
+    --primary-dark:#b99628;
 
-    --color-black:#111111;
+    --black:#111111;
 
-    --color-dark:#1A1A1A;
+    --white:#ffffff;
 
-    --color-white:#FFFFFF;
+    --gray:#666666;
 
-    --color-gray:#666666;
+    --light:#F8F9FB;
 
-    --color-light:#F8F9FB;
+    --border:#ececec;
 
-    --color-border:#ECECEC;
-
-    --shadow-small:0 10px 25px rgba(0,0,0,.05);
-
-    --shadow-medium:0 20px 45px rgba(0,0,0,.12);
-
-    --shadow-large:0 35px 70px rgba(0,0,0,.18);
-
-    --radius-small:12px;
-
-    --radius-medium:20px;
-
-    --radius-large:30px;
+    --shadow:0 15px 40px rgba(0,0,0,.08);
 
     --transition:.35s ease;
 
 }
 
-/* ==========================================================
-   RESET
-==========================================================*/
-
-*{
-
-    margin:0;
-
-    padding:0;
-
-    box-sizing:border-box;
-
-}
-
-html{
-
-    scroll-behavior:smooth;
-
-}
-
-body{
-
-    font-family:'Poppins',sans-serif;
-
-    background:var(--color-white);
-
-    color:var(--color-black);
-
-    overflow-x:hidden;
-
-}
-
-img{
-
-    display:block;
-
-    max-width:100%;
-
-}
-
-a{
-
-    text-decoration:none;
-
-}
-
-ul{
-
-    list-style:none;
-
-}
-
-/* ==========================================================
-   CONTAINER PADRÃO
-==========================================================*/
+/* =========================
+   CONTAINER
+========================= */
 
 .container{
 
@@ -113,73 +64,45 @@ ul{
 
     margin:auto;
 
-    padding:0 30px;
+    padding:0 25px;
 
 }
 
-/* ==========================================================
-   SEÇÕES
-==========================================================*/
+/* =========================
+   IMAGENS
+========================= */
 
-section{
+img{
 
-    position:relative;
+    display:block;
 
-}
-
-/* ==========================================================
-   TÍTULOS
-==========================================================*/
-
-.section-title{
-
-    text-align:center;
-
-    margin-bottom:70px;
+    max-width:100%;
 
 }
 
-.section-title span{
+/* =========================
+   LINKS
+========================= */
 
-    color:var(--color-primary);
+a{
 
-    font-size:15px;
-
-    font-weight:700;
-
-    text-transform:uppercase;
-
-    letter-spacing:2px;
+    text-decoration:none;
 
 }
 
-.section-title h2{
+/* =========================
+   LISTAS
+========================= */
 
-    margin-top:18px;
+ul{
 
-    font-size:44px;
-
-    font-weight:800;
-
-    color:var(--color-black);
+    list-style:none;
 
 }
 
-.section-title p{
-
-    margin:20px auto 0;
-
-    max-width:700px;
-
-    color:var(--color-gray);
-
-    line-height:1.8;
-
-}
-
-/* ==========================================================
+/* =========================
    BOTÕES
-==========================================================*/
+========================= */
 
 .btn{
 
@@ -189,57 +112,97 @@ section{
 
     align-items:center;
 
-    gap:10px;
+    padding:17px 35px;
 
-    padding:18px 34px;
+    border-radius:50px;
 
-    border-radius:60px;
-
-    font-size:16px;
-
-    font-weight:700;
+    font-weight:600;
 
     transition:var(--transition);
-
-    cursor:pointer;
 
 }
 
 .btn-primary{
 
-    background:var(--color-primary);
+    background:var(--primary);
 
-    color:var(--color-black);
+    color:var(--black);
 
 }
 
 .btn-primary:hover{
 
-    transform:translateY(-5px);
+    transform:translateY(-4px);
 
-    box-shadow:0 20px 35px rgba(212,175,55,.30);
+    box-shadow:0 18px 35px rgba(212,175,55,.30);
 
 }
 
 .btn-dark{
 
-    background:var(--color-black);
+    background:var(--black);
 
-    color:var(--color-white);
+    color:var(--white);
 
 }
 
 .btn-dark:hover{
 
-    background:var(--color-primary);
+    background:var(--primary);
 
-    color:var(--color-black);
+    color:var(--black);
 
 }
 
-/* ==========================================================
-   SCROLLBAR PERSONALIZADA
-==========================================================*/
+/* =========================
+   TÍTULOS
+========================= */
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.section-title span{
+
+    color:var(--primary);
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    font-size:14px;
+
+}
+
+.section-title h2{
+
+    margin-top:18px;
+
+    font-size:42px;
+
+    font-weight:800;
+
+}
+
+.section-title p{
+
+    max-width:700px;
+
+    margin:18px auto;
+
+    color:var(--gray);
+
+}
+
+/* =========================
+   SCROLLBAR
+========================= */
 
 ::-webkit-scrollbar{
 
@@ -247,34 +210,94 @@ section{
 
 }
 
-::-webkit-scrollbar-track{
-
-    background:#f0f0f0;
-
-}
-
 ::-webkit-scrollbar-thumb{
 
-    background:var(--color-primary);
+    background:var(--primary);
 
     border-radius:20px;
 
 }
 
-::-webkit-scrollbar-thumb:hover{
+::-webkit-scrollbar-track{
 
-    background:var(--color-primary-dark);
+    background:#eeeeee;
 
 }
 
-/* ==========================================================
-   SELEÇÃO DE TEXTO
-==========================================================*/
+/* =========================
+   SELEÇÃO
+========================= */
 
 ::selection{
 
-    background:var(--color-primary);
+    background:var(--primary);
 
-    color:var(--color-black);
+    color:#111;
+
+}
+
+/* =========================
+   BOTÃO WHATSAPP
+========================= */
+
+.whatsapp-float{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    width:70px;
+
+    height:70px;
+
+    background:#25D366;
+
+    color:#ffffff;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    box-shadow:0 18px 40px rgba(37,211,102,.30);
+
+    transition:.35s;
+
+    z-index:9999;
+
+    animation:pulse 2s infinite;
+
+}
+
+.whatsapp-float:hover{
+
+    transform:scale(1.1);
+
+}
+
+@keyframes pulse{
+
+    0%{
+
+        box-shadow:0 0 0 0 rgba(37,211,102,.45);
+
+    }
+
+    70%{
+
+        box-shadow:0 0 0 18px rgba(37,211,102,0);
+
+    }
+
+    100%{
+
+        box-shadow:0 0 0 0 rgba(37,211,102,0);
+
+    }
 
 }
