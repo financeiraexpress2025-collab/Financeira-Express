@@ -160,3 +160,59 @@ width:150px;
 }
 
 }
+
+/* ===== SERVIÇOS ===== */
+
+.servicos{
+    padding:80px 0;
+    background:#f8f6f1;
+}
+
+.servicos h2{
+    text-align:center;
+    font-size:38px;
+    color:#111;
+    margin-bottom:10px;
+}
+
+.subtitulo{
+    text-align:center;
+    max-width:700px;
+    margin:0 auto 50px;
+    color:#666;
+}
+
+.cards-servicos{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#fff;
+    border-radius:18px;
+    padding:30px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+    border-top:5px solid #d4af37;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#111;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#666;
+    margin-bottom:20px;
+}
+
+.card a{
+    color:#d4af37;
+    text-decoration:none;
+    font-weight:700;
+}
