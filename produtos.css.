@@ -1,17 +1,21 @@
 /* ===== PÁGINAS DOS PRODUTOS ===== */
 
-body{
+*{
     margin:0;
     padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
     background:#0d0d0d;
     color:#f5f5f5;
-    font-family:'Poppins',sans-serif;
 }
 
 .produto{
+    width:90%;
     max-width:1000px;
     margin:50px auto;
-    padding:20px;
 }
 
 .titulo{
@@ -30,19 +34,17 @@ body{
 }
 
 .bloco{
-    background:#1b1b1b;
-    border:1px solid #d4af37;
+    background:#181818;
+    border:2px solid #d4af37;
     border-radius:18px;
     padding:30px;
     margin-bottom:30px;
-    box-shadow:0 8px 20px rgba(0,0,0,.35);
 }
 
 .bloco h2{
     color:#d4af37;
-    margin-top:0;
     margin-bottom:20px;
-    font-size:28px;
+    font-size:30px;
 }
 
 .cards{
@@ -52,47 +54,39 @@ body{
 }
 
 .card{
-    background:#252525;
+    background:#222;
     border:1px solid rgba(212,175,55,.35);
     border-radius:15px;
     padding:20px;
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-5px);
-    border-color:#d4af37;
 }
 
 .card h3{
     color:#d4af37;
-    margin-top:0;
     margin-bottom:15px;
 }
 
 .card p{
     color:#f5f5f5;
     line-height:1.7;
-    margin:8px 0;
 }
 
 .botao{
     display:block;
     width:320px;
-    max-width:90%;
+    max-width:100%;
     margin:35px auto 15px;
     text-align:center;
     background:#d4af37;
     color:#111;
-    padding:18px;
-    border-radius:12px;
     text-decoration:none;
-    font-size:18px;
+    padding:16px;
+    border-radius:12px;
     font-weight:700;
+    transition:.3s;
 }
 
 .botao:hover{
-    background:#c39a17;
+    background:#b9911f;
 }
 
 .voltar{
@@ -100,5 +94,33 @@ body{
     text-align:center;
     color:#d4af37;
     text-decoration:none;
-    font-weight:600;
     margin-bottom:30px;
+}
+
+.voltar:hover{
+    text-decoration:underline;
+}
+
+@media(max-width:768px){
+
+.titulo{
+    font-size:34px;
+}
+
+.subtitulo{
+    font-size:16px;
+}
+
+.bloco{
+    padding:20px;
+}
+
+.cards{
+    grid-template-columns:1fr;
+}
+
+.botao{
+    width:100%;
+}
+
+}
