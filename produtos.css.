@@ -1,1 +1,105 @@
 
+/* ===== PÁGINAS DOS PRODUTOS ===== */
+
+body{
+    margin:0;
+    padding:0;
+    background:#0d0d0d;
+    color:#f5f5f5;
+    font-family:'Poppins',sans-serif;
+}
+
+.produto{
+    max-width:1000px;
+    margin:50px auto;
+    padding:20px;
+}
+
+.titulo{
+    text-align:center;
+    color:#d4af37;
+    font-size:42px;
+    margin-bottom:10px;
+    font-weight:700;
+}
+
+.subtitulo{
+    text-align:center;
+    color:#d8d8d8;
+    font-size:18px;
+    margin-bottom:35px;
+}
+
+.bloco{
+    background:#1b1b1b;
+    border:1px solid #d4af37;
+    border-radius:18px;
+    padding:30px;
+    margin-bottom:30px;
+    box-shadow:0 8px 20px rgba(0,0,0,.35);
+}
+
+.bloco h2{
+    color:#d4af37;
+    margin-top:0;
+    margin-bottom:20px;
+    font-size:28px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#252525;
+    border:1px solid rgba(212,175,55,.35);
+    border-radius:15px;
+    padding:20px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    border-color:#d4af37;
+}
+
+.card h3{
+    color:#d4af37;
+    margin-top:0;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#f5f5f5;
+    line-height:1.7;
+    margin:8px 0;
+}
+
+.botao{
+    display:block;
+    width:320px;
+    max-width:90%;
+    margin:35px auto 15px;
+    text-align:center;
+    background:#d4af37;
+    color:#111;
+    padding:18px;
+    border-radius:12px;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:700;
+}
+
+.botao:hover{
+    background:#c39a17;
+}
+
+.voltar{
+    display:block;
+    text-align:center;
+    color:#d4af37;
+    text-decoration:none;
+    font-weight:600;
+    margin-bottom:30px;
